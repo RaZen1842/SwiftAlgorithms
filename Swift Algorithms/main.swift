@@ -1,11 +1,3 @@
-//
-//  main.swift
-//  Swift Algorithms
-//
-//  Created by Veturi, Shreyas (HJRM) on 31/10/2023.
-//
-
 import Foundation
 
-print("Hello, World!")
-
+var data = [54,26,32,51,56,31,76,83,95]
