@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		850007A52AF133EC00CFF26C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850007A42AF133EC00CFF26C /* main.swift */; };
 		850007AC2AF1352500CFF26C /* Insertion Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850007AB2AF1352500CFF26C /* Insertion Sort.swift */; };
-		85CA67252AFA69CC00B0257E /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA67242AFA69CC00B0257E /* Algorithm.swift */; };
-		85CA67262AFA69E500B0257E /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA67242AFA69CC00B0257E /* Algorithm.swift */; };
+		859CB59F2AFE3B7000A152D6 /* Bubble Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB59E2AFE3B7000A152D6 /* Bubble Sort.swift */; };
+		859CB5A02AFE3B7000A152D6 /* Bubble Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB59E2AFE3B7000A152D6 /* Bubble Sort.swift */; };
+		859CB5A22AFE47BE00A152D6 /* Binary Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB5A12AFE47BE00A152D6 /* Binary Search.swift */; };
+		859CB5A32AFE47BE00A152D6 /* Binary Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB5A12AFE47BE00A152D6 /* Binary Search.swift */; };
+		85CA67252AFA69CC00B0257E /* LinSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA67242AFA69CC00B0257E /* LinSearch.swift */; };
+		85CA67262AFA69E500B0257E /* LinSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA67242AFA69CC00B0257E /* LinSearch.swift */; };
 		85CA67282AFA6A3B00B0257E /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA671F2AFA691D00B0257E /* SwiftAlgorithmsTestCases.swift */; };
 		85CA67292AFA6A3B00B0257E /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA671F2AFA691D00B0257E /* SwiftAlgorithmsTestCases.swift */; };
 		85DE49212AF5071000B11B54 /* Quick Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE49202AF5071000B11B54 /* Quick Sort.swift */; };
@@ -32,9 +36,11 @@
 		850007A12AF133EC00CFF26C /* Swift Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift Algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		850007A42AF133EC00CFF26C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		850007AB2AF1352500CFF26C /* Insertion Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Insertion Sort.swift"; sourceTree = "<group>"; };
+		859CB59E2AFE3B7000A152D6 /* Bubble Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble Sort.swift"; sourceTree = "<group>"; };
+		859CB5A12AFE47BE00A152D6 /* Binary Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binary Search.swift"; sourceTree = "<group>"; };
 		85CA671D2AFA691D00B0257E /* SwiftAlgorithmsTestCases.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAlgorithmsTestCases.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CA671F2AFA691D00B0257E /* SwiftAlgorithmsTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAlgorithmsTestCases.swift; sourceTree = "<group>"; };
-		85CA67242AFA69CC00B0257E /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
+		85CA67242AFA69CC00B0257E /* LinSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinSearch.swift; sourceTree = "<group>"; };
 		85DE49202AF5071000B11B54 /* Quick Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick Sort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +86,9 @@
 				850007A42AF133EC00CFF26C /* main.swift */,
 				85DE49202AF5071000B11B54 /* Quick Sort.swift */,
 				850007AB2AF1352500CFF26C /* Insertion Sort.swift */,
-				85CA67242AFA69CC00B0257E /* Algorithm.swift */,
+				85CA67242AFA69CC00B0257E /* LinSearch.swift */,
+				859CB59E2AFE3B7000A152D6 /* Bubble Sort.swift */,
+				859CB5A12AFE47BE00A152D6 /* Binary Search.swift */,
 			);
 			path = "Swift Algorithms";
 			sourceTree = "<group>";
@@ -183,9 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				850007AC2AF1352500CFF26C /* Insertion Sort.swift in Sources */,
-				85CA67252AFA69CC00B0257E /* Algorithm.swift in Sources */,
+				85CA67252AFA69CC00B0257E /* LinSearch.swift in Sources */,
 				85CA67292AFA6A3B00B0257E /* SwiftAlgorithmsTestCases.swift in Sources */,
+				859CB5A22AFE47BE00A152D6 /* Binary Search.swift in Sources */,
 				850007A52AF133EC00CFF26C /* main.swift in Sources */,
+				859CB59F2AFE3B7000A152D6 /* Bubble Sort.swift in Sources */,
 				85DE49212AF5071000B11B54 /* Quick Sort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85CA67262AFA69E500B0257E /* Algorithm.swift in Sources */,
+				85CA67262AFA69E500B0257E /* LinSearch.swift in Sources */,
+				859CB5A32AFE47BE00A152D6 /* Binary Search.swift in Sources */,
+				859CB5A02AFE3B7000A152D6 /* Bubble Sort.swift in Sources */,
 				85CA67282AFA6A3B00B0257E /* SwiftAlgorithmsTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
