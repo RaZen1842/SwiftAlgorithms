@@ -97,3 +97,21 @@ final class BubbleSortTests: XCTestCase {
         XCTAssertEqual(actual, expected)
     }
 }
+
+//BINARY SEARCH TESTS
+
+final class BinarySearchTests: XCTestCase {
+    func testBinSearchWithEmptyArray() {
+        //Arrange
+        let sut = binarySearch()
+        let array = [Int]()
+        let expected = false
+        let target = 8
+        
+        //Act
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        //Assert
+        XCTAssertEqual(actual, expected)
+    }
+}
