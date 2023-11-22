@@ -114,4 +114,6 @@ final class BinarySearchTests: XCTestCase {
         //Assert
         XCTAssertEqual(actual, expected)
     }
+    
+    func testBinSearchWith
 }
