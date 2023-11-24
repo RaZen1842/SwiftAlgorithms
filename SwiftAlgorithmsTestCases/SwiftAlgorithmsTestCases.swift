@@ -115,5 +115,64 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(actual, expected)
     }
     
-    func testBinSearchWith
+    func testBinSearchWithArrayLen1ReturnsTrue() {
+        //Arrange
+        let sut = binarySearch()
+        let array = [5]
+        let expected = true
+        let target = 5
+        
+        //Act
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        //Assert
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testBinSearchWithArrayLen1ReturnsFalse() {
+        //Arrange
+        let sut = binarySearch()
+        let array = [5]
+        let expected = false
+        let target = 6
+        
+        //Act
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        //Assert
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testBinSearchWithUnsortedArrayReturnsTrue() {
+        let sut = binarySearch()
+        let array = [2,1,3,5,4,1,6,6,12,554,23,5,5,2]
+        let expected = true
+        let target = 6
+        
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testBinSearchWithSortedArrayReturnsTrue() {
+        let sut = binarySearch()
+        let array = [1,2,3,4,5,6,7]
+        let expected = true
+        let target = 6
+        
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testBinSearchWithArrayTagetNotFoundReturnsFalse() {
+        let sut = binarySearch()
+        let array = [2,1,3,5,4,1,6,6,12,554,23,5,5,2]
+        let expected = false
+        let target = 10
+    
+        let actual = sut.BinarySearch(data: array, target: target)
+        
+        XCTAssertEqual(actual, expected)
+    }
 }

@@ -8,36 +8,58 @@ class binarySearch {
             return false
         }
         
-        var sortedArray = bubbleSort().BubbleSort(data: new_array)
+        if data.count == 1 {
+            if target == data[0] {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        
+        let sortedArray = bubbleSort().BubbleSort(data: new_array)
         
         var medianIndex = sortedArray.count / 2
-        var startIndex = 0
         var endIndex = sortedArray.count - 1
+        var startIndex = 0
         
-        var found: Bool = false
+        var found = false
+        
+        print(sortedArray)
         
         while found == false {
-            
-            if sortedArray[medianIndex] == target {
+            if target == sortedArray[medianIndex] {
                 found = true
+                
             }
             
-            if target < sortedArray[medianIndex] {
-                endIndex = medianIndex
+            else if target < sortedArray[medianIndex] {
+                endIndex = medianIndex - 1
+                print(endIndex)
+                
             }
             
-            if target > sortedArray[medianIndex] {
-                startIndex = medianIndex
+            else if target > sortedArray[medianIndex] {
+                startIndex = medianIndex + 1
+                print(startIndex)
+                
             }
             
-            if startIndex == medianIndex || endIndex == medianIndex {
+            if startIndex > data.count - 1 {
                 return false
             }
             
-            medianIndex = (endIndex + startIndex) / 2
+            if startIndex >= endIndex {
+                return false
+            }
             
+            
+            
+            medianIndex = (startIndex + endIndex) / 2
         }
         
         return found
+        
     }
+    
 }

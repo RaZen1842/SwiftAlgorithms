@@ -1,10 +1,3 @@
-//
-//  Algorithm.swift
-//  Swift Algorithms
-//
-//  Created by Veturi, Shreyas (HJRM) on 07/11/2023.
-//
-
 import Foundation
 
 
